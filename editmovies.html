@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<a href="/login">Login</a><br>
+<h2>Add Movie</h2>
+<form action="/addmovie" method="post">
+  <label for="99popularity">99popularity:</label><br>
+  <input type="text" id="99popularity" name="99popularity"><br>
+
+  <label for="director">director:</label><br>
+  <input type="text" id="director" name="director"><br>
+
+  <label for="imdb_score">imdb_score:</label><br>
+  <input type="text" id="imdb_score" name="imdb_score"><br>
+
+  <label for="name">name:</label><br>
+  <input type="text" id="name" name="name"><br>
+
+  <label for="genre">genre:</label><br>
+  <input type="text" id="genre" name="genre"><br>
+
+  <input type="submit" value="Submit">
+</form> <br><br>
+
+<h2> Delete Movie</h2>
+<form action="/deletemovie" method="post">
+  <label for="delete by">Delete by:</label><br>
+  <select id="option" name="option">
+    <option value="director">director</option>
+    <option value="imdb_score_g">imdb_score &gt=</option>
+    <option value="imdb_score_l">imdb_score &lt=</option>
+    <option value="name">name</option>
+    <option value="genre">genre</option>
+  </select><br><br>
+<input type="text" id="value" name="value"><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the movie details will get stored into the database.</p>
+
+</body>
+</html>

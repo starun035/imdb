@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<br><a href="/login">Admin Login</a><br><br>
+<h2>Search for a movie</h2>
+<form action="/home" method="post">
+  <label for="search by">Search by:</label><br>
+  <select id="option" name="option">
+    <option value="director">director</option>
+    <option value="imdb_score_g">imdb_score &gt=</option>
+    <option value="imdb_score_l">imdb_score &lt=</option>
+    <option value="name">name</option>
+    <option value="genre">genre</option>
+  </select><br><br>
+  
+  <input type="text" id="value" name="value"><br>
+  <input type="submit">
+</form>
+
+</body>
+</html>
